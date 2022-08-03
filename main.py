@@ -10,19 +10,21 @@ from huaweicloudsdkdns.v2.region.dns_region import DnsRegion
 
 if __name__ == '__main__':
     # 华为云AK
-    ak = "RKTTQTZHDCELMUZRC8CJ"
+    ak = "<Your AK>"
     
     # 华为云SK
-    sk = "bEwVn30PSgcjSXaRbxAgGK7aiA1112Nw7xtybXZ2"
+    sk = "<Your SK>"
     
     # 主域名
-    domain = "test.wcnmb.cn"
+    domain = "domain.com"
     
     # 子域名
-    recordset = "homeip"
+    recordset = "www"
     
     # IP地址
     ip = ["8.8.8.8"]
+    
+    #网卡信息 默认 wan 口
     result = os.popen("ifconfig pppoe-wan").read()
     
     if find := re.search(r"inet addr:(\d+\.\d+\.\d+\.\d+)", result):
@@ -31,7 +33,7 @@ if __name__ == '__main__':
     else:
         print("NULL")
     
-    # 记录类型
+    # 记录类型 无需修改
     dtype = "A"
     
     credentials = BasicCredentials(ak, sk) \
