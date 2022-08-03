@@ -1,5 +1,5 @@
 # huaweicloud-ddns
-华为云DDNS Python脚本，适用于Openwrt
+华为云DDNS Python脚本，本人用在Openwrt，其他程序稍微修改一下获取网卡IP的方式就可以
 
 # 必要库
 ```
