@@ -14,7 +14,8 @@ pip install huaweicloudsdkall
 | sk | - |Secret Access Key |
 | domain | hw.wcnmb.cn | DNS解析域名 |
 | recordset | ip | 解析记录 |
-|  ----  | ----  | ----  |
+
+
 填写以上配置后 更新的DDNS域名为 ip.hw.wcnmb.cn
 获取公网IP的方式为本地网卡，默认为pppoe-wan
 
